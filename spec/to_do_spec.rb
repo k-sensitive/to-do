@@ -13,6 +13,12 @@ describe('ToDo') do
     end
   end
 
+  describe('.all') do
+    it("is empty at first") do
+      expect(ToDo.all()).to(eq([]))
+    end
+  end
+
   describe('#save') do
     it('adds a task to the array of saved tasks') do
       test_task = ToDo.new('wash the lion')
