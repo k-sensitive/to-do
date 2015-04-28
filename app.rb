@@ -14,3 +14,8 @@ post('/tasks') do
   task.save()
   erb(:success)
 end
+
+post('/clear') do
+  ToDo.clear()
+  erb(:clear)
+end
